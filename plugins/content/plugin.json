@@ -1,0 +1,22 @@
+{
+  "name": "content",
+  "version": "0.1.0",
+  "description": "Article planning, outlining, drafting, SEO metadata, image prompts, report planning/writing, and content reviewing for readability, accuracy, and language quality",
+  "author": {
+    "name": "James Croft"
+  },
+  "keywords": [
+    "content",
+    "writing",
+    "articles",
+    "seo",
+    "outlines",
+    "reports",
+    "reviewing",
+    "editing",
+    "readability"
+  ],
+  "homepage": "https://github.com/jamesmcroft/everyday-prompts-marketplace",
+  "license": "MIT",
+  "skills": "skills/"
+}

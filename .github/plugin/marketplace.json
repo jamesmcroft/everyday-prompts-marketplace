@@ -1,0 +1,48 @@
+{
+  "name": "everyday-prompts-marketplace",
+  "owner": {
+    "name": "James Croft"
+  },
+  "metadata": {
+    "version": "0.1.0",
+    "description": "Everyday prompt skills for content writing, reviewing, social media, business ops, career growth, knowledge research, and dev workflows"
+  },
+  "plugins": [
+    {
+      "name": "content",
+      "version": "0.1.0",
+      "description": "Article planning, outlining, drafting, SEO, image prompts, report planning/writing, and content reviewing for readability, accuracy, and language quality",
+      "source": "plugins/content"
+    },
+    {
+      "name": "social-media",
+      "version": "0.1.0",
+      "description": "Engaging social posts, LinkedIn recommendations, and social feature image prompt generation",
+      "source": "plugins/social-media"
+    },
+    {
+      "name": "business-ops",
+      "version": "0.1.0",
+      "description": "Meeting notes summaries, slide speaker scripts, and OKR planning",
+      "source": "plugins/business-ops"
+    },
+    {
+      "name": "career-growth",
+      "version": "0.1.0",
+      "description": "Performance review impact assessments, weekly impact journals, and monthly journal rollups",
+      "source": "plugins/career-growth"
+    },
+    {
+      "name": "knowledge-research",
+      "version": "0.1.0",
+      "description": "Iterative research orchestration, context-grounded Q&A, and research hypothesis generation",
+      "source": "plugins/knowledge-research"
+    },
+    {
+      "name": "dev-workflow",
+      "version": "0.1.0",
+      "description": "Commit messages, PR publishing, code review, build/test fixes, spec generation, bug reports, product feedback, and release notes",
+      "source": "plugins/dev-workflow"
+    }
+  ]
+}

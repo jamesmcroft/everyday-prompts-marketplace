@@ -1,0 +1,18 @@
+{
+  "name": "career-growth",
+  "version": "0.1.0",
+  "description": "Performance review impact assessments, weekly impact journals, and monthly journal rollups",
+  "author": {
+    "name": "James Croft"
+  },
+  "keywords": [
+    "career",
+    "performance-review",
+    "journaling",
+    "impact-tracking",
+    "growth"
+  ],
+  "homepage": "https://github.com/jamesmcroft/everyday-prompts-marketplace",
+  "license": "MIT",
+  "skills": "skills/"
+}
