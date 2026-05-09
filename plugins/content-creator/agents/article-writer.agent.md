@@ -39,7 +39,7 @@ End-to-end agent that takes a topic and produces a complete, quality-checked blo
 
 ### Phase 3 - Outline
 
-6. **Produce the outline.** Use the `/article-outline` skill approach to generate:
+6. **Produce the outline.** Use the `/article-outline` skill to generate:
    - A working title (with primary keyphrase).
    - An introduction brief (what pain point it addresses, how it hooks the reader).
    - Ordered body sections with headings and 2-3 bullet points each.
@@ -71,12 +71,12 @@ End-to-end agent that takes a topic and produces a complete, quality-checked blo
 
 ### Phase 5 - Self-Review
 
-11. **Run the readability review.** Evaluate the complete article using the `/readability-review` skill approach:
+11. **Run the readability review.** Evaluate the complete article using the `/readability-review` skill:
     - Clarity, flow, impact for the stated audience.
     - Conciseness - identify any sections that could be tightened.
     - Engagement - flag any weak spots.
 
-12. **Run the accuracy review.** Evaluate using the `/accuracy-review` skill approach:
+12. **Run the accuracy review.** Evaluate using the `/accuracy-review` skill:
     - Verify all factual claims are current and supported.
     - Flag any statistics or version numbers that need checking.
     - Confirm external links are to credible, current sources.
@@ -134,3 +134,15 @@ End-to-end agent that takes a topic and produces a complete, quality-checked blo
 - Deliver without running self-reviews.
 - Stuff keywords - topic coverage and natural language beat keyword density.
 - Produce generic filler content without specific insight.
+
+### Skill Execution
+
+When invoking a skill from this plugin, the skill's `SKILL.md` file defines the full workflow to follow. Skills are installed at:
+
+```
+${PLUGIN_DIR}/everyday-prompts-marketplace/content-creator/skills/<skill-name>/SKILL.md
+```
+
+For Copilot, `${PLUGIN_DIR}` is `~/.copilot/installed-plugins`.
+
+Before executing a skill, read its `SKILL.md` from the installed plugin path above to load the full instructions. The user's working directory (cwd) is the target repo, not the plugin directory - do not expect skill files to exist in the cwd.

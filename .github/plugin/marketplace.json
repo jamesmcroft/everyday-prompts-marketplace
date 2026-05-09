@@ -9,16 +9,10 @@
   },
   "plugins": [
     {
-      "name": "content",
+      "name": "content-creator",
       "version": "0.1.0",
-      "description": "Article planning, outlining, drafting, SEO, image prompts, report planning/writing, and content reviewing for readability, accuracy, and language quality",
-      "source": "plugins/content"
-    },
-    {
-      "name": "social-media",
-      "version": "0.1.0",
-      "description": "Engaging social posts, LinkedIn recommendations, and social feature image prompt generation",
-      "source": "plugins/social-media"
+      "description": "Full content creation lifecycle - research, planning, writing, reviewing, and promotion across blog, social media, Pinterest, Instagram, and short-form video",
+      "source": "plugins/content-creator"
     },
     {
       "name": "business-ops",
@@ -35,7 +29,7 @@
     {
       "name": "knowledge-research",
       "version": "0.1.0",
-      "description": "Iterative research orchestration, context-grounded Q&A, and research hypothesis generation",
+      "description": "Iterative research orchestration and research hypothesis generation",
       "source": "plugins/knowledge-research"
     },
     {

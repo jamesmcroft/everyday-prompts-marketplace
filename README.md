@@ -23,18 +23,17 @@ Everyday prompt skills for Copilot CLI - content writing, reviewing, social medi
 
 ```
 /plugin marketplace add jamesmcroft/everyday-prompts-marketplace
-/plugin install content@everyday-prompts-marketplace
+/plugin install content-creator@everyday-prompts-marketplace
 ```
 
 ## Available Plugins
 
 | Plugin | Description |
 |--------|-------------|
-| `content` | Article planning, outlining, drafting, SEO, image prompts, report writing, and content reviewing |
-| `social-media` | Social posts, LinkedIn recommendations, and social feature image generation |
+| `content-creator` | Full content creation lifecycle - writing, reviewing, and promotion across blog, social, Pinterest, Instagram, and short-form video |
 | `business-ops` | Meeting notes, slide speaker scripts, and OKR planning |
 | `career-growth` | Performance review impact assessments and weekly/monthly impact journals |
-| `knowledge-research` | Iterative research orchestration, grounded Q&A, and hypothesis generation |
+| `knowledge-research` | Iterative research orchestration and hypothesis generation |
 | `dev-workflow` | Commits, PRs, code review, build/test fixes, specs, bug reports, and release notes |
 
 ## Related
