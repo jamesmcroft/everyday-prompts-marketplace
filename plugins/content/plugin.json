@@ -18,5 +18,6 @@
   ],
   "homepage": "https://github.com/jamesmcroft/everyday-prompts-marketplace",
   "license": "MIT",
+  "agents": "agents/",
   "skills": "skills/"
 }
