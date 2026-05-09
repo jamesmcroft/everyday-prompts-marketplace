@@ -31,8 +31,7 @@ Everyday prompt skills for Copilot CLI - content writing, reviewing, social medi
 | Plugin | Description |
 |--------|-------------|
 | `content-creator` | Full content creation lifecycle - writing, reviewing, and promotion across blog, social, Pinterest, Instagram, and short-form video |
-| `business-ops` | Meeting notes, slide speaker scripts, and OKR planning |
-| `career-growth` | Performance review impact assessments and weekly/monthly impact journals |
+| `professional` | Day-to-day skills for knowledge workers - communication, planning, documentation, performance, and career development |
 | `knowledge-research` | Iterative research orchestration and hypothesis generation |
 | `dev-workflow` | Commits, PRs, code review, build/test fixes, specs, bug reports, and release notes |
 

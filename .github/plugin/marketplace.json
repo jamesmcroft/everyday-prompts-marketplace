@@ -5,7 +5,7 @@
   },
   "metadata": {
     "version": "0.1.0",
-    "description": "Everyday prompt skills for content writing, reviewing, social media, business ops, career growth, knowledge research, and dev workflows"
+    "description": "Everyday prompt skills for content creators, professionals, researchers, and developers"
   },
   "plugins": [
     {
@@ -15,16 +15,10 @@
       "source": "plugins/content-creator"
     },
     {
-      "name": "business-ops",
+      "name": "professional",
       "version": "0.1.0",
-      "description": "Meeting notes summaries, slide speaker scripts, and OKR planning",
-      "source": "plugins/business-ops"
-    },
-    {
-      "name": "career-growth",
-      "version": "0.1.0",
-      "description": "Performance review impact assessments, weekly impact journals, and monthly journal rollups",
-      "source": "plugins/career-growth"
+      "description": "Day-to-day skills for professionals and knowledge workers - communication, planning, documentation, performance tracking, and career development",
+      "source": "plugins/professional"
     },
     {
       "name": "knowledge-research",

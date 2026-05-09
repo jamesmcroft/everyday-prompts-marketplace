@@ -1,0 +1,25 @@
+{
+  "name": "professional",
+  "version": "0.1.0",
+  "description": "Day-to-day skills for professionals and knowledge workers - communication, planning, documentation, performance tracking, and career development",
+  "author": {
+    "name": "James Croft"
+  },
+  "keywords": [
+    "professional",
+    "knowledge-worker",
+    "meetings",
+    "email",
+    "okr",
+    "performance-review",
+    "journaling",
+    "reports",
+    "stakeholder",
+    "decisions",
+    "presentations"
+  ],
+  "homepage": "https://github.com/jamesmcroft/everyday-prompts-marketplace",
+  "license": "MIT",
+  "agents": "agents/",
+  "skills": "skills/"
+}
