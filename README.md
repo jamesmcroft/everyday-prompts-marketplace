@@ -34,6 +34,14 @@ Everyday prompt skills for Copilot CLI - content writing, reviewing, social medi
 | `professional` | Day-to-day skills for knowledge workers - communication, planning, documentation, performance, and career development |
 | `developer` | Full development lifecycle - code review, PRs, build/test fixes, commits, issues, release notes, and codebase orientation |
 
+## Cookbooks
+
+Each plugin includes a COOKBOOK.md with practical workflows and real-world examples:
+
+- [Content Creator Cookbook](plugins/content-creator/COOKBOOK.md) - writing, promoting, and repurposing content across platforms
+- [Professional Cookbook](plugins/professional/COOKBOOK.md) - meetings, status updates, reviews, reports, and career development
+- [Developer Cookbook](plugins/developer/COOKBOOK.md) - issue-to-PR lifecycle, code review, debugging, and shipping
+
 ## Related
 
 These plugins are derived from the [everyday-prompts](https://github.com/jamesmcroft/everyday-prompts) collection. The original repo remains a reference for the underlying prompt patterns and templates.
