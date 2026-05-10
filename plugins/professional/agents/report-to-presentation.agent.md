@@ -97,7 +97,7 @@ End-to-end agent that takes an analysis question or raw material and orchestrate
 When invoking a skill from this plugin, the skill's `SKILL.md` file defines the full workflow to follow. Skills are installed at:
 
 ```
-${PLUGIN_DIR}/everyday-prompts-marketplace/content-creator/skills/<skill-name>/SKILL.md
+${PLUGIN_DIR}/everyday-prompts-marketplace/professional/skills/<skill-name>/SKILL.md
 ```
 
 For Copilot, `${PLUGIN_DIR}` is `~/.copilot/installed-plugins`.
