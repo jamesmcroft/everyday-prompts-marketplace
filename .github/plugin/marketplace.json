@@ -5,7 +5,7 @@
   },
   "metadata": {
     "version": "0.1.0",
-    "description": "Everyday prompt skills for content creators, professionals, researchers, and developers"
+    "description": "Everyday prompt skills for content creators, professionals, and developers"
   },
   "plugins": [
     {
@@ -19,12 +19,6 @@
       "version": "0.1.0",
       "description": "Day-to-day skills for professionals and knowledge workers - communication, planning, documentation, performance tracking, and career development",
       "source": "plugins/professional"
-    },
-    {
-      "name": "knowledge-research",
-      "version": "0.1.0",
-      "description": "Iterative research orchestration and research hypothesis generation",
-      "source": "plugins/knowledge-research"
     },
     {
       "name": "developer",

@@ -32,7 +32,6 @@ Everyday prompt skills for Copilot CLI - content writing, reviewing, social medi
 |--------|-------------|
 | `content-creator` | Full content creation lifecycle - writing, reviewing, and promotion across blog, social, Pinterest, Instagram, and short-form video |
 | `professional` | Day-to-day skills for knowledge workers - communication, planning, documentation, performance, and career development |
-| `knowledge-research` | Iterative research orchestration and hypothesis generation |
 | `developer` | Full development lifecycle - code review, PRs, build/test fixes, commits, issues, release notes, and codebase orientation |
 
 ## Related
