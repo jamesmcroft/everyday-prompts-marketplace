@@ -1,7 +1,7 @@
 {
-  "name": "dev-workflow",
+  "name": "developer",
   "version": "0.1.0",
-  "description": "Commit messages, PR publishing, code review, build/test fixes, spec generation, bug reports, product feedback, and release notes",
+  "description": "Full development lifecycle for any developer - code review, PR publishing, build/test fixing, commit messages, issue management, release notes, and codebase orientation",
   "author": {
     "name": "James Croft"
   },
@@ -12,9 +12,11 @@
     "code-review",
     "debugging",
     "release-notes",
-    "bug-reports"
+    "issues",
+    "github"
   ],
   "homepage": "https://github.com/jamesmcroft/everyday-prompts-marketplace",
   "license": "MIT",
+  "agents": "agents/",
   "skills": "skills/"
 }
