@@ -73,3 +73,15 @@ The company reported 15% growth in Q3 [1], outpacing industry averages [2][3].
 [2] https://www.example.com/industry-analysis
 [3] https://www.example.com/market-data
 ```
+
+### Skill Execution
+
+When invoking a skill from this plugin, the skill's `SKILL.md` file defines the full workflow to follow. Skills are installed at:
+
+```
+${PLUGIN_DIR}/everyday-prompts-marketplace/content-creator/skills/<skill-name>/SKILL.md
+```
+
+For Copilot, `${PLUGIN_DIR}` is `~/.copilot/installed-plugins`.
+
+Before executing a skill, read its `SKILL.md` from the installed plugin path above to load the full instructions. The user's working directory (cwd) is the target repo, not the plugin directory - do not expect skill files to exist in the cwd.

@@ -69,3 +69,15 @@ You are a report planning agent. Given a user's report brief, you produce a titl
 - Produce context summaries longer than 2 paragraphs.
 - Make more than 2 tool calls to gather background information.
 - Include sections that overlap significantly in scope.
+
+### Skill Execution
+
+When invoking a skill from this plugin, the skill's `SKILL.md` file defines the full workflow to follow. Skills are installed at:
+
+```
+${PLUGIN_DIR}/everyday-prompts-marketplace/content-creator/skills/<skill-name>/SKILL.md
+```
+
+For Copilot, `${PLUGIN_DIR}` is `~/.copilot/installed-plugins`.
+
+Before executing a skill, read its `SKILL.md` from the installed plugin path above to load the full instructions. The user's working directory (cwd) is the target repo, not the plugin directory - do not expect skill files to exist in the cwd.

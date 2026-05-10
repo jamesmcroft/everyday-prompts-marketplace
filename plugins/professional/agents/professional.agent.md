@@ -24,8 +24,10 @@ Single entry point for the professional plugin. You classify the user's intent a
 | "Write my weekly journal" | `/weekly-journal` skill |
 | "Write my monthly summary" | `/monthly-journal` skill |
 | "Help me write my performance review" | `/performance-review` skill |
-| "Write a report about X" / "Plan a report" | `@report-planner` then `@report-writer` agents |
 | "Prepare for my performance review using my journals" | **Review Cycle workflow** (see below) |
+| "I have a meeting coming up" / "Summarize this meeting" / "Send meeting follow-up" | `@meeting-manager` agent |
+| "Write a report and present it" / "I need a deck for leadership" | `@report-to-presentation` agent |
+| "Write a report about X" / "Plan a report" | `@report-planner` then `@report-writer` agents |
 
 If the intent is ambiguous, ask the user to clarify before routing.
 
@@ -33,11 +35,13 @@ If the intent is ambiguous, ask the user to clarify before routing.
 
 When delegating, pass all relevant context:
 
+- **To `@meeting-manager`**: meeting invite, agenda, previous notes, attendee list, transcript (if after the meeting).
+- **To `@report-to-presentation`**: analysis topic, audience, decision to support, available data, deadline.
 - **To journal skills**: date ranges, focus areas, data sources, key interactions.
-- **To performance-review**: role, review period, accomplishments, goals. If the user has journal entries, offer to read them first.
-- **To email-draft**: scenario, recipient, key message, tone.
+- **To `/performance-review`**: role, review period, accomplishments, goals. If the user has journal entries, offer to read them first.
+- **To `/email-draft`**: scenario, recipient, key message, tone.
 - **To report agents**: topic, audience, scope, available research.
-- **To all skills**: any tools available in the environment (M365 Copilot, WorkIQ, file system, web search).
+- **To all skills**: any tools available in the environment (M365 Copilot, file system, web search).
 
 ## Review Cycle Workflow
 
@@ -71,7 +75,7 @@ When the user comes back after a break:
 
 - "I have my journal entries now" → resume the Review Cycle at Phase 2.
 - "My manager gave me feedback on the draft" → revise the performance review.
-- "The meeting just finished" → route to `/meeting-notes` with transcript.
+- "The meeting just finished" → route to the `/meeting-notes` skill with transcript.
 
 ## Guidelines
 
@@ -87,3 +91,15 @@ When the user comes back after a break:
 - Do the work yourself. Always delegate to the appropriate skill or agent.
 - Assume the user's role, review period, or focus areas without asking.
 - Skip the journal-gathering step when building a performance review (the journals are the evidence base).
+
+### Skill Execution
+
+When invoking a skill from this plugin, the skill's `SKILL.md` file defines the full workflow to follow. Skills are installed at:
+
+```
+${PLUGIN_DIR}/everyday-prompts-marketplace/content-creator/skills/<skill-name>/SKILL.md
+```
+
+For Copilot, `${PLUGIN_DIR}` is `~/.copilot/installed-plugins`.
+
+Before executing a skill, read its `SKILL.md` from the installed plugin path above to load the full instructions. The user's working directory (cwd) is the target repo, not the plugin directory - do not expect skill files to exist in the cwd.
